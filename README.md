@@ -24,6 +24,9 @@ Codes for all the analyses implemented in the "Functional connectome harmonics a
 
 ## D_statistical-analysis
 *D_statistical-analysis/* is where harmonization procedure is performed, and connectome-derived metrics are used for statistical analyses.
+- *block-A_dataset_creation_and_harmonization/* takes as input ABCD demographics and connectome-derived metrics to build the dataset to be used for statistical analysis. Then it performs data harmonization on rs-Gordon correlations (ABCD tabulated), and LEiDA- and FCH-derived metrics. It returns as output two datasets, one with original and the other with harmonized brain measures.
+- *block-B_partial-correlations/* computes partial correlations analysis between demographics and developmental variables and LEiDA and FCH metrics respectively. It returns visual representations of significant associations (heatmaps, scatterplots, circus plots, and half-violin plots).
+- *block-C_elasticNet/* performs elasticNet regression to predict TMI from different dataset's subsets and estimate model performance coefficients. It allows also to visualize most relevant variables in the model prediction with respective model weights.
 
 
 
