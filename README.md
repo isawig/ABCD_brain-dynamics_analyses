@@ -1,7 +1,7 @@
 # ABCD_brain-dynamics_analyses
 Codes for all the analyses implemented in the "Functional connectome harmonics and dynamic connectivity maps of the preadolescent brain" manuscript.
 
-For preprocessing steps refer to the GitHub page at: https://github.com/jollyashmeet/ABCD_data_processing.
+For preprocessing scripts used in Puhti (CSC), refer to the GitHub page at: https://github.com/jollyashmeet/ABCD_data_processing.
 
 ## A_prepare-for-connectomics
 *A_prepare-for-connectomics/* folder contains script to run before connectome analysis. 
