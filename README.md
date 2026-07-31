@@ -21,7 +21,7 @@ For preprocessing scripts used in Puhti (CSC), refer to the GitHub page at: http
 
 -  *block-A_run_FCH_pipeline/* allows to run FCH pipeline from subjects mean timeseries, and to derive functional harmonics as well as cortical projections, useful to estimate following metrics.
 -  *block-B_derive-metrics/* contains code to estimate power and energy from harmonics and eigenvectors.
--  *block-C_PLSR_with_LEiDA/* takes as input LEiDA centroids for given K, and FCH ordered and randomized harmonics, and fits them in a PLSR model. It returns as output the MSE, percentage of explained variance, and other model estimates.
+-  *block-C_PLSR_with_LEiDA/* takes as input LEiDA centroids for given K, and FCH ordered and randomized harmonics, and fits them in a PLSR model. It returns as output the number of PLS components that minimises the cross-validated MSE. Then tests this number of components in a permutation test with 1000 permutations and null distribution.
 -  *block-D_NeuroMap_validation/* compares low-order FCHs to seven reference adults gradients via correlation analysis, and returns as output the estimated correlations between each pair of brain networks. It takes as input one harmonic at a time and compares it to all gradients. Then results are visualized with ENIGMA. 
 
 ## D_statistical-analysis
